@@ -105,6 +105,17 @@ yarn install
 yarn tauri dev
 ```
 
+### Docker
+
+- build docker
+```bash
+docker build -t systembridge:latest .
+```
+- run docker
+```bash
+docker run -d --name systembridge --restart=unless-stopped -p 9170:9170 systembridge 
+```
+
 ## Module Development
 
 ### Windows
