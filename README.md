@@ -116,6 +116,11 @@ docker build -t systembridge:latest .
 docker run -d --name systembridge --restart=unless-stopped -p 9170:9170 systembridge 
 ```
 
+- retrieve current token/api-key 
+```bash
+docker exec systembridge python -m systembridgecli token 
+```
+
 ## Module Development
 
 ### Windows
